@@ -2,11 +2,11 @@
 ### Projeto desenvolvido no hackaCCR organizado pela Shawee com parceria da CCR
 
 1. Projeto mobile feito com React Native
-https://github.com/Evndroo/projetoHackaCCR/tree/master/mobile
+- [Github](https://github.com/Evndroo/projetoHackaCCR/tree/master/mobile)
 
 2. Projeto backend feito com Swift usando o framework Perfect
 - [Github](https://github.com/IsaacDouglas/hackathon-ccr)
-- [Neste repositório](https://github.com/Evndroo/projetoHackaCCR/blob/master/backend/hackathon-ccr-master.zip)
+- [Zip](https://github.com/Evndroo/projetoHackaCCR/blob/master/backend/hackathon-ccr-master.zip)
 
 
 ## Imagens
