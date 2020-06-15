@@ -10,15 +10,15 @@ const Home = ({ navigation }) => {
         await AsyncStorage.setItem("userName", name)
         navigation.navigate("Missions")
     }
-/*
-    useEffect(()=>{
-        AsyncStorage.getItem("userName").then(user=>{
-            if(!user){
-                navigation.navigate("Missions")
-            }
-        })
-    },[]);
-*/
+    /*
+        useEffect(()=>{
+            AsyncStorage.getItem("userName").then(user=>{
+                if(!user){
+                    navigation.navigate("Missions")
+                }
+            })
+        },[]);
+    */
     return (
         <KeyboardAvoidingView style={{ flex: 1 }} behavior={(Platform.OS == "ios") ? "padding" : undefined}>
 
@@ -35,7 +35,7 @@ const Home = ({ navigation }) => {
                         onChangeText={setName}
                         autoCorrect={false}
                         placeholder="Digite seu apelido"
-                    ></TextInput>                
+                    ></TextInput>
                 </View>
 
 
@@ -63,17 +63,23 @@ const styles = StyleSheet.create({
 
     },
     message: {
-        marginTop:-55,
+        marginTop: -55,
         fontSize: 16,
-        textAlign:"center",
+        textAlign: "center",
     },
-    fieldLabel:{
-        fontSize:16,
-        color:"#f3c342",
-        marginBottom:0,
-        textAlign:"left",
-        paddingHorizontal:10,
-        fontWeight:"bold"
+    fieldLabel: {
+        fontSize: 16,
+        color: "#f3c342",
+        marginBottom: 0,
+        textAlign: "left",
+        paddingHorizontal: 10,
+        fontWeight: "bold"
+    },
+    logo: {
+        flex: 0.3,
+        width:150,
+        height: 120 ,
+        resizeMode: 'contain'
     },
     input: {
         height: 60,
@@ -91,7 +97,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 105,
         borderColor: "#9e260e",
         borderWidth: 1,
-        borderRadius:5
+        borderRadius: 5
     },
     starButtonText: {
         fontWeight: "bold",
